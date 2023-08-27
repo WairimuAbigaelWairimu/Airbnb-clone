@@ -52,6 +52,7 @@ body{
 .search{
     display: flex;
     border-radius: 20px;
+    
     align-items: center;
     box-shadow: 0 0 4px #808080;
     
@@ -277,17 +278,6 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1115px) {
     .nav-list-one span{
         display: none;
@@ -296,8 +286,13 @@ button{
 
   @media screen and (max-width: 744px) {
     .search{
-        margin-left: -50px;
+        margin-left: -50px;  
+        
     }
+    .anywhere-link{
+        margin: -10px;
+    }
+
     .user-info{
         display: none;
     }
