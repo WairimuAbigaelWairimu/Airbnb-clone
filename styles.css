@@ -289,7 +289,7 @@ button{
 
 
 @media screen and (max-width: 1115px) {
-    span{
+    .nav-list-one span{
         display: none;
     }
   }
