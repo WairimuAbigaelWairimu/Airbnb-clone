@@ -299,6 +299,9 @@ button{
   }
 
   @media screen and (max-width: 744px) {
+    .search{
+        margin-left: -50px;
+    }
     .user-info{
         display: none;
     }
@@ -311,6 +314,7 @@ button{
    .map{
     display: none;
    }
+   
   }
 
   @media screen and (max-width: 684px){
