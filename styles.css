@@ -4,8 +4,7 @@
     border: none;
     font-size: 100%;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0.1em 0.4em;
-    
+    margin: 0.1em 0.4em; 
 }
 
 body{
@@ -24,6 +23,7 @@ body{
     z-index: 1;
     top: 0;
     background-color: #fff;
+    margin-top: -10px;
     
     
 }
@@ -153,7 +153,7 @@ button{
     display: inline;
 }
 
-.total-price{
+/*.total-price{
     display: flex;
     border: 1px solid #808080;
     justify-content: space-between;
@@ -177,17 +177,18 @@ button{
     font-size: 3rem;
 }
 
-
+*/
 .bottom-nav{
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 30px;
+    margin-bottom: -2px;
     position: fixed;
     bottom: 0;
     border-top: 1px solid black;
     padding: 0.5em;
     background-color: #fff;
+    
 
 }
 .bottom-nav a{
@@ -206,11 +207,6 @@ button{
     margin-right: 10px;
     
 }
-
-
-
-
-
 
 .content {
    width: 100%;
