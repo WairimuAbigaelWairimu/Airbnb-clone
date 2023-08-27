@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        
+        <div class="nav-list-one">
+            <div class="logo">
+                <i class="fa-brands fa-airbnb" style="color: #ff0000;"></i>
+            </div>
+            <div>
+                <p><span>airbnb</span></p>
+            </div>
+            <div class="search">
+                <div class="anywhere-link">
+                    <a href="#"><button>Anywhere</button></a>
+                </div>
+                
+                <div class="anyweek-link">
+                    <a href="#"><button>Any week</button></a>
+                </div>
+                <div class="addguest-link">
+                    <a href="#"><button>Add guests</button></a>
+                </div>
+                <div id="search-btn" ><i class="fas fa-search" style="color: #fff;"></i></div>
+            </div>
+            <div class="user-info">
+                <div class="airbnb-link">
+                    <a href="#">Airbnb your home</a>
+                </div>
+                <div class="languages">
+                    <i class="fa-solid fa-globe" style="color: #000000;"></i>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-bars" style="color: #000000;"></i>
+                    <i class="fa-solid fa-user" style="color: #000000;"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-list-two">
+            <div class="trending">
+                <i class="fa-solid fa-fire" style="color: #000000;"></i>
+                <p>Trending</p>
+            </div>
+            <div class="amazing-pools">
+                <i class="fa-solid fa-water-ladder" style="color: #808080;"></i>
+                <p>Amazing views</p>
+            </div>
+            <div class="beachfront">
+                <i class="fa-solid fa-umbrella-beach" style="color: #808080;"></i>
+                <p>Beachfront</p>
+            </div>
+            <div class="rooms">
+                <i class="fa-solid fa-people-roof" style="color: #808080;"></i>
+                <p>Rooms</p>
+            </div>
+            <div class="farms">
+                <i class="fa-solid fa-tractor" style="color: #808080;"></i>
+                <p>Farms</p>
+            </div>
+            <div class="bnb">
+                <i class="fa-solid fa-bed" style="color: #808080;"></i>
+                <p>Bed & Breakfast</p>
+            </div>
+            <div class="tiny-homes">
+                <i class="fa-solid fa-house-chimney-user" style="color: #808080;"></i>
+                <p>Tiny homes</p>
+            </div>
+            <div class="iconic-cities">
+                <i class="fa-solid fa-city" style="color: #808080;"></i>
+                <p>Iconic cities</p>
+            </div>
+            <div class="new">
+                <i class="fa-solid fa-key" style="color: #808080;"></i>
+                <p>New</p>
+            </div>
+            <div class="lake">
+                <i class="fa-solid fa-water" style="color: #808080;"></i>
+                <p>Lake</p>
+            </div>
+            <div class="campers">
+                <i class="fa-solid fa-campground" style="color: #808080;"></i>
+                <p>Campers</p>
+            </div>
+            <div class="next">
+                <i class="fa-solid fa-chevron-right" style="color: #808080;"></i>
+            </div>
+            <div class="filter">
+               <i class="fa-solid fa-sort" style="color: #808080;"></i>
+               <p>Filter</p>
+            </div>
+        </div>  
+    </div>
+
+    <!--<div class="total-price">
+        <h5>Display total price</h5>
+        <p>Includes all fees, before taxes</p>
+        <i class="fa-solid fa-toggle-off" style="color: #808080;"></i>
+    </div> -->
+    
+    <div class="content">
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb1.webp" alt="">
+            </figure>
+            <div>
+                <a href="#">
+                    <h3>Nairobi,Kenya</h3>
+                    <p>Hosted by Susan</p>
+                    <p>Sep 23 - 28</p>
+                    <p><span>$109</span> night</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb2.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb4.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb5.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb6.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb7.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb8.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb9.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb10.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb11.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb12.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb13.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb14.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb15.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb16.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb17.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb18.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb19.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb20.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb21.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb22.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb23.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb24.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb25.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb26.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb27.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb28.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb29.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb30.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb31.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb32.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p><span>$109</span> night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="overlay">
+            <figure>
+                <img style="height: 250px; width: 320px;" src="img/airbnb33.webp" alt="">
+                <figcaption>
+                    <a href="#">
+                        <h3>Nairobi,Kenya</h3>
+                        <p>Hosted by Susan</p>
+                        <p>Sep 23 - 28</p>
+                        <p></p><span>$109</span>night</p>
+                    </a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="bottom-nav">
+            <div class="flex">
+                <p>© 2023 Airbnb, Inc.</p>
+                <a href="#">· Terms</a>
+                <a href="#">. Sitemap</a>
+                <a href="#">. Privacy</a>
+                <a href="#">. Your privacy choices</a>
+                <a href="#">. Destinatoins</a>
+            </div>
+            <div class="flex" id="support">
+                <i class="fa-solid fa-globe" style="color: #000000;"></i>
+                <a href="#">English(USA)</a>
+                <p>$</p>
+                <a href="#">USD</a>
+                <a href="#">Support and resources</a>
+                <i class="fa-solid fa-chevron-up" style="color: #808080;"></i>
+            </div>
+        </div> 
+        <div class="map">
+            <h2>Show map</h2>
+            <i class="fa-solid fa-map" style="color: #fff;"></i>
+        </div>
+    </div>
+</body>
+</html>
