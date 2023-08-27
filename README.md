@@ -4,4 +4,4 @@
 This is an Airbnb,inc. front-end clone site. It is responsive to all screen sizes but built with HTML and CSS so no functionality
 enabled.
 
-[Link to the site](https://abby-airbnbclone.netlify.app/)
+Link to the [site](https://abby-airbnbclone.netlify.app/).
